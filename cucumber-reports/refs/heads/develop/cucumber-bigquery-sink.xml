@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="296.726445">
-<testcase classname="BigQuery sink - Validate BigQuery sink plugin error scenarios" name="Verify BigQuery Sink properties validation errors for mandatory fields" time="9.864846">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="368.435313">
+<testcase classname="BigQuery sink - Validate BigQuery sink plugin error scenarios" name="Verify BigQuery Sink properties validation errors for mandatory fields" time="11.215043">
 <system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Sink is BigQuery.......................................................passed
 Then Open BigQuery sink properties..........................................passed
@@ -8,7 +8,7 @@ Then Enter the BigQuery properties with blank property "referenceName"......pass
 Then Validate mandatory property error for "referenceName"..................passed
 ]]></system-out>
 </testcase>
-<testcase classname="BigQuery sink - Validate BigQuery sink plugin error scenarios" name="Verify BigQuery Sink properties validation errors for mandatory fields 2" time="7.35898">
+<testcase classname="BigQuery sink - Validate BigQuery sink plugin error scenarios" name="Verify BigQuery Sink properties validation errors for mandatory fields 2" time="8.947776">
 <system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Sink is BigQuery.......................................................passed
 Then Open BigQuery sink properties..........................................passed
@@ -16,7 +16,7 @@ Then Enter the BigQuery properties with blank property "dataset"............pass
 Then Validate mandatory property error for "dataset"........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="BigQuery sink - Validate BigQuery sink plugin error scenarios" name="Verify BigQuery Sink properties validation errors for mandatory fields 3" time="6.883508">
+<testcase classname="BigQuery sink - Validate BigQuery sink plugin error scenarios" name="Verify BigQuery Sink properties validation errors for mandatory fields 3" time="9.491922">
 <system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Sink is BigQuery.......................................................passed
 Then Open BigQuery sink properties..........................................passed
@@ -24,7 +24,7 @@ Then Enter the BigQuery properties with blank property "table"..............pass
 Then Validate mandatory property error for "table"..........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="BigQuery sink - Verification of GCS to BigQuery successful data transfer" name="Validate successful records transfer from GCS to BigQuery" time="121.893795">
+<testcase classname="BigQuery sink - Verification of GCS to BigQuery successful data transfer" name="Validate successful records transfer from GCS to BigQuery" time="141.786677">
 <system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Source is GCS..........................................................passed
 When Sink is BigQuery.......................................................passed
@@ -57,7 +57,7 @@ Then Get count of no of records transferred to target BigQuery Table........pass
 Then Validate the cmek key "cmekBQ" of target BigQuery table if cmek is enabled.passed
 ]]></system-out>
 </testcase>
-<testcase classname="BigQuery sink - Verification of GCS to BigQuery successful data transfer with macro arguments" name="Validate successful records transfer from GCS to BigQuery with macro arguments" time="150.725316">
+<testcase classname="BigQuery sink - Verification of GCS to BigQuery successful data transfer with macro arguments" name="Validate successful records transfer from GCS to BigQuery with macro arguments" time="196.993895">
 <system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Source is GCS..........................................................passed
 When Sink is BigQuery.......................................................passed
