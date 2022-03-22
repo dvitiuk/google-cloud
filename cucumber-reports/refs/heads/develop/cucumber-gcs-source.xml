@@ -1,52 +1,198 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="19" time="1082.877927">
-<testcase classname="GCS source - Verify GCS Source plugin error scenarios" name="Verify GCS Source properties validation errors for mandatory fields" time="8.355761">
-<system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
+<testsuite failures="18" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="19" time="456.569134">
+<testcase classname="GCS source - Verify GCS Source plugin error scenarios" name="Verify GCS Source properties validation errors for mandatory fields" time="36.785821">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@data-cy='referenceName']/following-sibling::div[@data-cy='property-row-error']&quot;}&#10;  (Session info: headless chrome=98.0.4758.102)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'&#10;System info: host: 'runner-deployment-build-e2e-data-integrations-b8699d88f-mmfkp', ip: '10.116.17.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.170+', java.version: '1.8.0_312'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4d4ec3f52a951eabf3c7d2deb8bd50e1, findElement {using=xpath, value=//*[@data-cy='referenceName']/following-sibling::div[@data-cy='property-row-error']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.hk7iKB}, goog:chromeOptions: {debuggerAddress: localhost:42413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42413/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4d4ec3f52a951eabf3c7d2deb8bd50e1&#10;&#9;at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)&#10;&#9;at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)&#10;&#9;at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:381)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)&#10;&#9;at io.cdap.e2e.pages.locators.CdfPluginPropertiesLocators.locatePluginPropertyInlineError(CdfPluginPropertiesLocators.java:59)&#10;&#9;at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyPluginPropertyInlineErrorMessage(CdfPluginPropertiesActions.java:98)&#10;&#9;at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyRequiredPropertyHasNoValueErrorMessage(CdfPluginPropertiesActions.java:124)&#10;&#9;at stepsdesign.PipelineSteps.validateMandatoryPropertyErrorFor(PipelineSteps.java:125)&#10;&#9;at ✽.Validate mandatory property error for &quot;referenceName&quot;(file:src/e2e-test/features/gcs/source/GCSSourceError.feature:9)&#10;"><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Source is GCS..........................................................passed
 Then Open GCS source properties.............................................passed
 Then Enter the GCS properties with blank property "referenceName"...........passed
-Then Validate mandatory property error for "referenceName"..................passed
-]]></system-out>
+Then Validate mandatory property error for "referenceName"..................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@data-cy='referenceName']/following-sibling::div[@data-cy='property-row-error']"}
+  (Session info: headless chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
+System info: host: 'runner-deployment-build-e2e-data-integrations-b8699d88f-mmfkp', ip: '10.116.17.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.170+', java.version: '1.8.0_312'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d4ec3f52a951eabf3c7d2deb8bd50e1, findElement {using=xpath, value=//*[@data-cy='referenceName']/following-sibling::div[@data-cy='property-row-error']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.hk7iKB}, goog:chromeOptions: {debuggerAddress: localhost:42413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42413/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d4ec3f52a951eabf3c7d2deb8bd50e1
+	at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:381)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)
+	at io.cdap.e2e.pages.locators.CdfPluginPropertiesLocators.locatePluginPropertyInlineError(CdfPluginPropertiesLocators.java:59)
+	at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyPluginPropertyInlineErrorMessage(CdfPluginPropertiesActions.java:98)
+	at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyRequiredPropertyHasNoValueErrorMessage(CdfPluginPropertiesActions.java:124)
+	at stepsdesign.PipelineSteps.validateMandatoryPropertyErrorFor(PipelineSteps.java:125)
+	at ✽.Validate mandatory property error for "referenceName"(file:src/e2e-test/features/gcs/source/GCSSourceError.feature:9)
+]]></failure>
 </testcase>
-<testcase classname="GCS source - Verify GCS Source plugin error scenarios" name="Verify GCS Source properties validation errors for mandatory fields 2" time="9.04418">
-<system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
+<testcase classname="GCS source - Verify GCS Source plugin error scenarios" name="Verify GCS Source properties validation errors for mandatory fields 2" time="37.486325">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@data-cy='path']/following-sibling::div[@data-cy='property-row-error']&quot;}&#10;  (Session info: headless chrome=98.0.4758.102)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'&#10;System info: host: 'runner-deployment-build-e2e-data-integrations-b8699d88f-mmfkp', ip: '10.116.17.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.170+', java.version: '1.8.0_312'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4d4ec3f52a951eabf3c7d2deb8bd50e1, findElement {using=xpath, value=//*[@data-cy='path']/following-sibling::div[@data-cy='property-row-error']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.hk7iKB}, goog:chromeOptions: {debuggerAddress: localhost:42413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42413/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4d4ec3f52a951eabf3c7d2deb8bd50e1&#10;&#9;at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)&#10;&#9;at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)&#10;&#9;at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:381)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)&#10;&#9;at io.cdap.e2e.pages.locators.CdfPluginPropertiesLocators.locatePluginPropertyInlineError(CdfPluginPropertiesLocators.java:59)&#10;&#9;at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyPluginPropertyInlineErrorMessage(CdfPluginPropertiesActions.java:98)&#10;&#9;at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyRequiredPropertyHasNoValueErrorMessage(CdfPluginPropertiesActions.java:124)&#10;&#9;at stepsdesign.PipelineSteps.validateMandatoryPropertyErrorFor(PipelineSteps.java:125)&#10;&#9;at ✽.Validate mandatory property error for &quot;path&quot;(file:src/e2e-test/features/gcs/source/GCSSourceError.feature:9)&#10;"><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Source is GCS..........................................................passed
 Then Open GCS source properties.............................................passed
 Then Enter the GCS properties with blank property "path"....................passed
-Then Validate mandatory property error for "path"...........................passed
-]]></system-out>
+Then Validate mandatory property error for "path"...........................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@data-cy='path']/following-sibling::div[@data-cy='property-row-error']"}
+  (Session info: headless chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
+System info: host: 'runner-deployment-build-e2e-data-integrations-b8699d88f-mmfkp', ip: '10.116.17.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.170+', java.version: '1.8.0_312'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d4ec3f52a951eabf3c7d2deb8bd50e1, findElement {using=xpath, value=//*[@data-cy='path']/following-sibling::div[@data-cy='property-row-error']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.hk7iKB}, goog:chromeOptions: {debuggerAddress: localhost:42413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42413/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d4ec3f52a951eabf3c7d2deb8bd50e1
+	at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:381)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)
+	at io.cdap.e2e.pages.locators.CdfPluginPropertiesLocators.locatePluginPropertyInlineError(CdfPluginPropertiesLocators.java:59)
+	at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyPluginPropertyInlineErrorMessage(CdfPluginPropertiesActions.java:98)
+	at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyRequiredPropertyHasNoValueErrorMessage(CdfPluginPropertiesActions.java:124)
+	at stepsdesign.PipelineSteps.validateMandatoryPropertyErrorFor(PipelineSteps.java:125)
+	at ✽.Validate mandatory property error for "path"(file:src/e2e-test/features/gcs/source/GCSSourceError.feature:9)
+]]></failure>
 </testcase>
-<testcase classname="GCS source - Verify GCS Source plugin error scenarios" name="Verify GCS Source properties validation errors for mandatory fields 3" time="9.102234">
-<system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
+<testcase classname="GCS source - Verify GCS Source plugin error scenarios" name="Verify GCS Source properties validation errors for mandatory fields 3" time="37.508954">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@data-cy='format']/following-sibling::div[@data-cy='property-row-error']&quot;}&#10;  (Session info: headless chrome=98.0.4758.102)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'&#10;System info: host: 'runner-deployment-build-e2e-data-integrations-b8699d88f-mmfkp', ip: '10.116.17.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.170+', java.version: '1.8.0_312'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4d4ec3f52a951eabf3c7d2deb8bd50e1, findElement {using=xpath, value=//*[@data-cy='format']/following-sibling::div[@data-cy='property-row-error']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.hk7iKB}, goog:chromeOptions: {debuggerAddress: localhost:42413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42413/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4d4ec3f52a951eabf3c7d2deb8bd50e1&#10;&#9;at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)&#10;&#9;at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)&#10;&#9;at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:381)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)&#10;&#9;at io.cdap.e2e.pages.locators.CdfPluginPropertiesLocators.locatePluginPropertyInlineError(CdfPluginPropertiesLocators.java:59)&#10;&#9;at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyPluginPropertyInlineErrorMessage(CdfPluginPropertiesActions.java:98)&#10;&#9;at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyRequiredPropertyHasNoValueErrorMessage(CdfPluginPropertiesActions.java:124)&#10;&#9;at stepsdesign.PipelineSteps.validateMandatoryPropertyErrorFor(PipelineSteps.java:125)&#10;&#9;at ✽.Validate mandatory property error for &quot;format&quot;(file:src/e2e-test/features/gcs/source/GCSSourceError.feature:9)&#10;"><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Source is GCS..........................................................passed
 Then Open GCS source properties.............................................passed
 Then Enter the GCS properties with blank property "format"..................passed
-Then Validate mandatory property error for "format".........................passed
-]]></system-out>
+Then Validate mandatory property error for "format".........................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@data-cy='format']/following-sibling::div[@data-cy='property-row-error']"}
+  (Session info: headless chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
+System info: host: 'runner-deployment-build-e2e-data-integrations-b8699d88f-mmfkp', ip: '10.116.17.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.170+', java.version: '1.8.0_312'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d4ec3f52a951eabf3c7d2deb8bd50e1, findElement {using=xpath, value=//*[@data-cy='format']/following-sibling::div[@data-cy='property-row-error']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.hk7iKB}, goog:chromeOptions: {debuggerAddress: localhost:42413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42413/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d4ec3f52a951eabf3c7d2deb8bd50e1
+	at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:381)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)
+	at io.cdap.e2e.pages.locators.CdfPluginPropertiesLocators.locatePluginPropertyInlineError(CdfPluginPropertiesLocators.java:59)
+	at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyPluginPropertyInlineErrorMessage(CdfPluginPropertiesActions.java:98)
+	at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyRequiredPropertyHasNoValueErrorMessage(CdfPluginPropertiesActions.java:124)
+	at stepsdesign.PipelineSteps.validateMandatoryPropertyErrorFor(PipelineSteps.java:125)
+	at ✽.Validate mandatory property error for "format"(file:src/e2e-test/features/gcs/source/GCSSourceError.feature:9)
+]]></failure>
 </testcase>
-<testcase classname="GCS source - Verify GCS Source plugin error scenarios" name="To verify Error message for invalid bucket name" time="10.802093">
-<system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
+<testcase classname="GCS source - Verify GCS Source plugin error scenarios" name="To verify Error message for invalid bucket name" time="38.850273">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@data-cy='path']/following-sibling::div[@data-cy='property-row-error']&quot;}&#10;  (Session info: headless chrome=98.0.4758.102)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'&#10;System info: host: 'runner-deployment-build-e2e-data-integrations-b8699d88f-mmfkp', ip: '10.116.17.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.170+', java.version: '1.8.0_312'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4d4ec3f52a951eabf3c7d2deb8bd50e1, findElement {using=xpath, value=//*[@data-cy='path']/following-sibling::div[@data-cy='property-row-error']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.hk7iKB}, goog:chromeOptions: {debuggerAddress: localhost:42413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42413/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4d4ec3f52a951eabf3c7d2deb8bd50e1&#10;&#9;at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)&#10;&#9;at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)&#10;&#9;at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:381)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)&#10;&#9;at io.cdap.e2e.utils.PluginPropertyUtils.findPropertyErrorElement(PluginPropertyUtils.java:79)&#10;&#9;at io.cdap.plugin.gcs.stepsdesign.GCSBase.verifyInvalidBucketNameErrorMessageIsDisplayedForBucket(GCSBase.java:102)&#10;&#9;at ✽.Verify invalid bucket name error message is displayed for bucket &quot;gcsInvalidBucketName&quot;(file:src/e2e-test/features/gcs/source/GCSSourceError.feature:23)&#10;"><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Source is GCS..........................................................passed
 Then Open GCS source properties.............................................passed
 Then Enter GCS property projectId and reference name........................passed
 Then Enter GCS property path "gcsInvalidBucketName".........................passed
 Then Select GCS property format "csv".......................................passed
-Then Verify invalid bucket name error message is displayed for bucket "gcsInvalidBucketName".passed
-]]></system-out>
+Then Verify invalid bucket name error message is displayed for bucket "gcsInvalidBucketName".failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@data-cy='path']/following-sibling::div[@data-cy='property-row-error']"}
+  (Session info: headless chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
+System info: host: 'runner-deployment-build-e2e-data-integrations-b8699d88f-mmfkp', ip: '10.116.17.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.170+', java.version: '1.8.0_312'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d4ec3f52a951eabf3c7d2deb8bd50e1, findElement {using=xpath, value=//*[@data-cy='path']/following-sibling::div[@data-cy='property-row-error']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.hk7iKB}, goog:chromeOptions: {debuggerAddress: localhost:42413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42413/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d4ec3f52a951eabf3c7d2deb8bd50e1
+	at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:381)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)
+	at io.cdap.e2e.utils.PluginPropertyUtils.findPropertyErrorElement(PluginPropertyUtils.java:79)
+	at io.cdap.plugin.gcs.stepsdesign.GCSBase.verifyInvalidBucketNameErrorMessageIsDisplayedForBucket(GCSBase.java:102)
+	at ✽.Verify invalid bucket name error message is displayed for bucket "gcsInvalidBucketName"(file:src/e2e-test/features/gcs/source/GCSSourceError.feature:23)
+]]></failure>
 </testcase>
-<testcase classname="GCS source - Verify GCS Source plugin error scenarios" name="To verify Error message for incorrect output path field value" time="17.126953">
-<system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
+<testcase classname="GCS source - Verify GCS Source plugin error scenarios" name="To verify Error message for incorrect output path field value" time="42.904476">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@data-cy='pathField']/following-sibling::div[@data-cy='property-row-error']&quot;}&#10;  (Session info: headless chrome=98.0.4758.102)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'&#10;System info: host: 'runner-deployment-build-e2e-data-integrations-b8699d88f-mmfkp', ip: '10.116.17.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.170+', java.version: '1.8.0_312'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4d4ec3f52a951eabf3c7d2deb8bd50e1, findElement {using=xpath, value=//*[@data-cy='pathField']/following-sibling::div[@data-cy='property-row-error']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.hk7iKB}, goog:chromeOptions: {debuggerAddress: localhost:42413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42413/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4d4ec3f52a951eabf3c7d2deb8bd50e1&#10;&#9;at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)&#10;&#9;at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)&#10;&#9;at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:381)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)&#10;&#9;at io.cdap.e2e.utils.PluginPropertyUtils.findPropertyErrorElement(PluginPropertyUtils.java:79)&#10;&#9;at io.cdap.plugin.gcs.stepsdesign.GCSBase.verifyOutputPathFieldErrorMessageForIncorrectPathField(GCSBase.java:126)&#10;&#9;at ✽.Verify Output Path field Error Message for incorrect path field &quot;gcsInvalidPathField&quot;(file:src/e2e-test/features/gcs/source/GCSSourceError.feature:34)&#10;"><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Source is GCS..........................................................passed
 Then Open GCS source properties.............................................passed
 Then Enter GCS property projectId and reference name........................passed
 Then Enter GCS source property path "gcsOutputFieldTestFile"................passed
 Then Select GCS property format "csv".......................................passed
 Then Enter GCS source property path field "gcsInvalidPathField".............passed
-Then Verify Output Path field Error Message for incorrect path field "gcsInvalidPathField".passed
-]]></system-out>
+Then Verify Output Path field Error Message for incorrect path field "gcsInvalidPathField".failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@data-cy='pathField']/following-sibling::div[@data-cy='property-row-error']"}
+  (Session info: headless chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
+System info: host: 'runner-deployment-build-e2e-data-integrations-b8699d88f-mmfkp', ip: '10.116.17.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.170+', java.version: '1.8.0_312'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d4ec3f52a951eabf3c7d2deb8bd50e1, findElement {using=xpath, value=//*[@data-cy='pathField']/following-sibling::div[@data-cy='property-row-error']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.hk7iKB}, goog:chromeOptions: {debuggerAddress: localhost:42413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42413/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d4ec3f52a951eabf3c7d2deb8bd50e1
+	at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:381)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)
+	at io.cdap.e2e.utils.PluginPropertyUtils.findPropertyErrorElement(PluginPropertyUtils.java:79)
+	at io.cdap.plugin.gcs.stepsdesign.GCSBase.verifyOutputPathFieldErrorMessageForIncorrectPathField(GCSBase.java:126)
+	at ✽.Verify Output Path field Error Message for incorrect path field "gcsInvalidPathField"(file:src/e2e-test/features/gcs/source/GCSSourceError.feature:34)
+]]></failure>
 </testcase>
-<testcase classname="GCS source - Verify GCS Source plugin error scenarios" name="To verify Error for incorrect delimiter" time="17.160699">
-<system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
+<testcase classname="GCS source - Verify GCS Source plugin error scenarios" name="To verify Error for incorrect delimiter" time="43.637326">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@data-cy='plugin-validation-error-msg']&quot;}&#10;  (Session info: headless chrome=98.0.4758.102)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'&#10;System info: host: 'runner-deployment-build-e2e-data-integrations-b8699d88f-mmfkp', ip: '10.116.17.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.170+', java.version: '1.8.0_312'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4d4ec3f52a951eabf3c7d2deb8bd50e1, findElement {using=xpath, value=//*[@data-cy='plugin-validation-error-msg']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.hk7iKB}, goog:chromeOptions: {debuggerAddress: localhost:42413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42413/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4d4ec3f52a951eabf3c7d2deb8bd50e1&#10;&#9;at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)&#10;&#9;at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)&#10;&#9;at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:381)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)&#10;&#9;at com.sun.proxy.$Proxy21.getText(Unknown Source)&#10;&#9;at io.cdap.plugin.gcs.stepsdesign.GCSBase.verifyGetSchemaFailsWithError(GCSBase.java:116)&#10;&#9;at ✽.Verify get schema fails with error(file:src/e2e-test/features/gcs/source/GCSSourceError.feature:46)&#10;"><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Source is GCS..........................................................passed
 Then Open GCS source properties.............................................passed
 Then Enter GCS property projectId and reference name........................passed
@@ -54,11 +200,41 @@ Then Enter GCS source property path "gcsDelimitedFile"......................pass
 Then Select GCS property format "delimited".................................passed
 Then Enter GCS property delimiter "gcsIncorrectDelimiter"...................passed
 Then Toggle GCS source property skip header to true.........................passed
-Then Verify get schema fails with error.....................................passed
-]]></system-out>
+Then Verify get schema fails with error.....................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@data-cy='plugin-validation-error-msg']"}
+  (Session info: headless chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
+System info: host: 'runner-deployment-build-e2e-data-integrations-b8699d88f-mmfkp', ip: '10.116.17.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.170+', java.version: '1.8.0_312'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d4ec3f52a951eabf3c7d2deb8bd50e1, findElement {using=xpath, value=//*[@data-cy='plugin-validation-error-msg']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.hk7iKB}, goog:chromeOptions: {debuggerAddress: localhost:42413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42413/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d4ec3f52a951eabf3c7d2deb8bd50e1
+	at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:381)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy21.getText(Unknown Source)
+	at io.cdap.plugin.gcs.stepsdesign.GCSBase.verifyGetSchemaFailsWithError(GCSBase.java:116)
+	at ✽.Verify get schema fails with error(file:src/e2e-test/features/gcs/source/GCSSourceError.feature:46)
+]]></failure>
 </testcase>
-<testcase classname="GCS source - Verify GCS Source plugin error scenarios" name="To verify Error for incorrect override field" time="16.822557">
-<system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
+<testcase classname="GCS source - Verify GCS Source plugin error scenarios" name="To verify Error for incorrect override field" time="43.952148">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@data-cy='plugin-validation-error-msg']&quot;}&#10;  (Session info: headless chrome=98.0.4758.102)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'&#10;System info: host: 'runner-deployment-build-e2e-data-integrations-b8699d88f-mmfkp', ip: '10.116.17.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.170+', java.version: '1.8.0_312'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4d4ec3f52a951eabf3c7d2deb8bd50e1, findElement {using=xpath, value=//*[@data-cy='plugin-validation-error-msg']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.hk7iKB}, goog:chromeOptions: {debuggerAddress: localhost:42413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42413/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4d4ec3f52a951eabf3c7d2deb8bd50e1&#10;&#9;at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)&#10;&#9;at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)&#10;&#9;at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:381)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)&#10;&#9;at com.sun.proxy.$Proxy21.getText(Unknown Source)&#10;&#9;at io.cdap.plugin.gcs.stepsdesign.GCSBase.verifyGetSchemaFailsWithError(GCSBase.java:116)&#10;&#9;at ✽.Verify get schema fails with error(file:src/e2e-test/features/gcs/source/GCSSourceError.feature:58)&#10;"><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Source is GCS..........................................................passed
 Then Open GCS source properties.............................................passed
 Then Enter GCS property projectId and reference name........................passed
@@ -66,11 +242,41 @@ Then Enter GCS source property path "gcsOutputFieldTestFile"................pass
 Then Select GCS property format "csv".......................................passed
 Then Enter GCS source property override field "gcsInvalidOverrideField" and data type "gcsOverrideDataType".passed
 Then Toggle GCS source property skip header to true.........................passed
-Then Verify get schema fails with error.....................................passed
-]]></system-out>
+Then Verify get schema fails with error.....................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@data-cy='plugin-validation-error-msg']"}
+  (Session info: headless chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
+System info: host: 'runner-deployment-build-e2e-data-integrations-b8699d88f-mmfkp', ip: '10.116.17.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.170+', java.version: '1.8.0_312'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d4ec3f52a951eabf3c7d2deb8bd50e1, findElement {using=xpath, value=//*[@data-cy='plugin-validation-error-msg']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.hk7iKB}, goog:chromeOptions: {debuggerAddress: localhost:42413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42413/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d4ec3f52a951eabf3c7d2deb8bd50e1
+	at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:381)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy21.getText(Unknown Source)
+	at io.cdap.plugin.gcs.stepsdesign.GCSBase.verifyGetSchemaFailsWithError(GCSBase.java:116)
+	at ✽.Verify get schema fails with error(file:src/e2e-test/features/gcs/source/GCSSourceError.feature:58)
+]]></failure>
 </testcase>
-<testcase classname="GCS source - Verify GCS Source plugin error scenarios" name="To verify Pipeline preview gets failed for incorrect Regex-Path" time="56.889189">
-<system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
+<testcase classname="GCS source - Verify GCS Source plugin error scenarios" name="To verify Pipeline preview gets failed for incorrect Regex-Path" time="14.794156">
+<failure message="java.lang.AssertionError: Schema displayed on UI should match with the expected Schema&#10;&#9;at org.junit.Assert.fail(Assert.java:89)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:42)&#10;&#9;at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)&#10;&#9;at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)&#10;&#9;at ✽.Validate output schema with expectedSchema &quot;gcsCsvFileSchema&quot;(file:src/e2e-test/features/gcs/source/GCSSourceError.feature:72)&#10;"><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Source is GCS..........................................................passed
 When Sink is BigQuery.......................................................passed
 Then Connect source as "GCS" and sink as "BigQuery" to establish connection.passed
@@ -80,20 +286,28 @@ Then Enter GCS source property path "gcsCsvFile"............................pass
 Then Select GCS property format "csv".......................................passed
 Then Enter GCS source property regex path filter "gcsIncorrectRegexPath"....passed
 Then Toggle GCS source property skip header to true.........................passed
-Then Validate output schema with expectedSchema "gcsCsvFileSchema"..........passed
-Then Validate "GCS" plugin properties.......................................passed
-Then Close the GCS properties...............................................passed
-Then Open BigQuery sink properties..........................................passed
-Then Enter the BigQuery sink mandatory properties...........................passed
-Then Validate "BigQuery" plugin properties..................................passed
-Then Close the BigQuery properties..........................................passed
-Then Save the pipeline......................................................passed
-Then Preview and run the pipeline...........................................passed
-Then Verify the preview of pipeline is "failed".............................passed
-]]></system-out>
+Then Validate output schema with expectedSchema "gcsCsvFileSchema"..........failed
+Then Validate "GCS" plugin properties.......................................skipped
+Then Close the GCS properties...............................................skipped
+Then Open BigQuery sink properties..........................................skipped
+Then Enter the BigQuery sink mandatory properties...........................skipped
+Then Validate "BigQuery" plugin properties..................................skipped
+Then Close the BigQuery properties..........................................skipped
+Then Save the pipeline......................................................skipped
+Then Preview and run the pipeline...........................................skipped
+Then Verify the preview of pipeline is "failed".............................skipped
+
+StackTrace:
+java.lang.AssertionError: Schema displayed on UI should match with the expected Schema
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)
+	at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)
+	at ✽.Validate output schema with expectedSchema "gcsCsvFileSchema"(file:src/e2e-test/features/gcs/source/GCSSourceError.feature:72)
+]]></failure>
 </testcase>
-<testcase classname="GCS source - Verification of GCS to BQ successful data transfer" name="To verify data is getting transferred from GCS to BigQuery with Mandatory fields" time="159.8944">
-<system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
+<testcase classname="GCS source - Verification of GCS to BQ successful data transfer" name="To verify data is getting transferred from GCS to BigQuery with Mandatory fields" time="14.326911">
+<failure message="java.lang.AssertionError: Schema displayed on UI should match with the expected Schema&#10;&#9;at org.junit.Assert.fail(Assert.java:89)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:42)&#10;&#9;at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)&#10;&#9;at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)&#10;&#9;at ✽.Validate output schema with expectedSchema &quot;gcsCsvFileSchema&quot;(file:src/e2e-test/features/gcs/source/GCSSourceToBigQuery.feature:15)&#10;"><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Source is GCS..........................................................passed
 When Sink is BigQuery.......................................................passed
 Then Connect source as "GCS" and sink as "BigQuery" to establish connection.passed
@@ -102,29 +316,37 @@ Then Enter GCS property projectId and reference name........................pass
 Then Enter GCS source property path "gcsCsvFile"............................passed
 Then Toggle GCS source property skip header to true.........................passed
 Then Select GCS property format "csv".......................................passed
-Then Validate output schema with expectedSchema "gcsCsvFileSchema"..........passed
-Then Validate "GCS" plugin properties.......................................passed
-Then Close the GCS properties...............................................passed
-Then Open BigQuery sink properties..........................................passed
-Then Enter the BigQuery sink mandatory properties...........................passed
-Then Validate "BigQuery" plugin properties..................................passed
-Then Close the BigQuery properties..........................................passed
-Then Save the pipeline......................................................passed
-Then Preview and run the pipeline...........................................passed
-Then Verify the preview of pipeline is "success"............................passed
-Then Click on preview data for BigQuery sink................................passed
-Then Verify preview output schema matches the outputSchema captured in properties.passed
-Then Close the preview data.................................................passed
-Then Deploy the pipeline....................................................passed
-Then Run the Pipeline in Runtime............................................passed
-Then Wait till pipeline is in running state.................................passed
-Then Open and capture logs..................................................passed
-Then Verify the pipeline status is "Succeeded"..............................passed
-Then Get count of no of records transferred to target BigQuery Table........passed
-]]></system-out>
+Then Validate output schema with expectedSchema "gcsCsvFileSchema"..........failed
+Then Validate "GCS" plugin properties.......................................skipped
+Then Close the GCS properties...............................................skipped
+Then Open BigQuery sink properties..........................................skipped
+Then Enter the BigQuery sink mandatory properties...........................skipped
+Then Validate "BigQuery" plugin properties..................................skipped
+Then Close the BigQuery properties..........................................skipped
+Then Save the pipeline......................................................skipped
+Then Preview and run the pipeline...........................................skipped
+Then Verify the preview of pipeline is "success"............................skipped
+Then Click on preview data for BigQuery sink................................skipped
+Then Verify preview output schema matches the outputSchema captured in properties.skipped
+Then Close the preview data.................................................skipped
+Then Deploy the pipeline....................................................skipped
+Then Run the Pipeline in Runtime............................................skipped
+Then Wait till pipeline is in running state.................................skipped
+Then Open and capture logs..................................................skipped
+Then Verify the pipeline status is "Succeeded"..............................skipped
+Then Get count of no of records transferred to target BigQuery Table........skipped
+
+StackTrace:
+java.lang.AssertionError: Schema displayed on UI should match with the expected Schema
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)
+	at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)
+	at ✽.Validate output schema with expectedSchema "gcsCsvFileSchema"(file:src/e2e-test/features/gcs/source/GCSSourceToBigQuery.feature:15)
+]]></failure>
 </testcase>
-<testcase classname="GCS source - Verification of GCS to BQ successful data transfer" name="To verify successful data transfer from GCS to BigQuery with outputField" time="139.9985">
-<system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
+<testcase classname="GCS source - Verification of GCS to BQ successful data transfer" name="To verify successful data transfer from GCS to BigQuery with outputField" time="15.687031">
+<failure message="java.lang.AssertionError: Schema displayed on UI should match with the expected Schema&#10;&#9;at org.junit.Assert.fail(Assert.java:89)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:42)&#10;&#9;at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)&#10;&#9;at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)&#10;&#9;at ✽.Validate output schema with expectedSchema &quot;gcsOutputFieldTestFileSchema&quot;(file:src/e2e-test/features/gcs/source/GCSSourceToBigQuery.feature:47)&#10;"><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Source is GCS..........................................................passed
 When Sink is BigQuery.......................................................passed
 Then Connect source as "GCS" and sink as "BigQuery" to establish connection.passed
@@ -134,24 +356,32 @@ Then Enter GCS source property path "gcsOutputFieldTestFile"................pass
 Then Select GCS property format "csv".......................................passed
 Then Enter GCS source property path field "gcsPathField"....................passed
 Then Toggle GCS source property skip header to true.........................passed
-Then Validate output schema with expectedSchema "gcsOutputFieldTestFileSchema".passed
-Then Validate "GCS" plugin properties.......................................passed
-Then Close the GCS properties...............................................passed
-Then Open BigQuery sink properties..........................................passed
-Then Enter the BigQuery sink mandatory properties...........................passed
-Then Validate "BigQuery" plugin properties..................................passed
-Then Close the BigQuery properties..........................................passed
-Then Save and Deploy Pipeline...............................................passed
-Then Run the Pipeline in Runtime............................................passed
-Then Wait till pipeline is in running state.................................passed
-Then Open and capture logs..................................................passed
-Then Verify the pipeline status is "Succeeded"..............................passed
-Then Get count of no of records transferred to target BigQuery Table........passed
-Then Verify output field "gcsPathField" in target BigQuery table contains path of the source GcsBucket "gcsOutputFieldTestFile".passed
-]]></system-out>
+Then Validate output schema with expectedSchema "gcsOutputFieldTestFileSchema".failed
+Then Validate "GCS" plugin properties.......................................skipped
+Then Close the GCS properties...............................................skipped
+Then Open BigQuery sink properties..........................................skipped
+Then Enter the BigQuery sink mandatory properties...........................skipped
+Then Validate "BigQuery" plugin properties..................................skipped
+Then Close the BigQuery properties..........................................skipped
+Then Save and Deploy Pipeline...............................................skipped
+Then Run the Pipeline in Runtime............................................skipped
+Then Wait till pipeline is in running state.................................skipped
+Then Open and capture logs..................................................skipped
+Then Verify the pipeline status is "Succeeded"..............................skipped
+Then Get count of no of records transferred to target BigQuery Table........skipped
+Then Verify output field "gcsPathField" in target BigQuery table contains path of the source GcsBucket "gcsOutputFieldTestFile".skipped
+
+StackTrace:
+java.lang.AssertionError: Schema displayed on UI should match with the expected Schema
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)
+	at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)
+	at ✽.Validate output schema with expectedSchema "gcsOutputFieldTestFileSchema"(file:src/e2e-test/features/gcs/source/GCSSourceToBigQuery.feature:47)
+]]></failure>
 </testcase>
-<testcase classname="GCS source - Verification of GCS to BQ successful data transfer" name="To verify Successful GCS to BigQuery data transfer with Datatype override" time="138.777817">
-<system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
+<testcase classname="GCS source - Verification of GCS to BQ successful data transfer" name="To verify Successful GCS to BigQuery data transfer with Datatype override" time="15.982601">
+<failure message="java.lang.AssertionError: Schema displayed on UI should match with the expected Schema&#10;&#9;at org.junit.Assert.fail(Assert.java:89)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:42)&#10;&#9;at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)&#10;&#9;at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)&#10;&#9;at ✽.Validate output schema with expectedSchema &quot;gcsOverrideSchema&quot;(file:src/e2e-test/features/gcs/source/GCSSourceToBigQuery.feature:74)&#10;"><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Source is GCS..........................................................passed
 When Sink is BigQuery.......................................................passed
 Then Connect source as "GCS" and sink as "BigQuery" to establish connection.passed
@@ -161,24 +391,32 @@ Then Enter GCS source property path "gcsOutputFieldTestFile"................pass
 Then Select GCS property format "csv".......................................passed
 Then Enter GCS source property override field "gcsOverrideField" and data type "gcsOverrideDataType".passed
 Then Toggle GCS source property skip header to true.........................passed
-Then Validate output schema with expectedSchema "gcsOverrideSchema".........passed
-Then Validate "GCS" plugin properties.......................................passed
-Then Close the GCS properties...............................................passed
-Then Open BigQuery sink properties..........................................passed
-Then Enter the BigQuery sink mandatory properties...........................passed
-Then Validate "BigQuery" plugin properties..................................passed
-Then Close the BigQuery properties..........................................passed
-Then Save and Deploy Pipeline...............................................passed
-Then Run the Pipeline in Runtime............................................passed
-Then Wait till pipeline is in running state.................................passed
-Then Open and capture logs..................................................passed
-Then Verify the pipeline status is "Succeeded"..............................passed
-Then Get count of no of records transferred to target BigQuery Table........passed
-Then Verify datatype of field "gcsOverrideField" is overridden to data type "gcsOverrideDataType" in target BigQuery table.passed
-]]></system-out>
+Then Validate output schema with expectedSchema "gcsOverrideSchema".........failed
+Then Validate "GCS" plugin properties.......................................skipped
+Then Close the GCS properties...............................................skipped
+Then Open BigQuery sink properties..........................................skipped
+Then Enter the BigQuery sink mandatory properties...........................skipped
+Then Validate "BigQuery" plugin properties..................................skipped
+Then Close the BigQuery properties..........................................skipped
+Then Save and Deploy Pipeline...............................................skipped
+Then Run the Pipeline in Runtime............................................skipped
+Then Wait till pipeline is in running state.................................skipped
+Then Open and capture logs..................................................skipped
+Then Verify the pipeline status is "Succeeded"..............................skipped
+Then Get count of no of records transferred to target BigQuery Table........skipped
+Then Verify datatype of field "gcsOverrideField" is overridden to data type "gcsOverrideDataType" in target BigQuery table.skipped
+
+StackTrace:
+java.lang.AssertionError: Schema displayed on UI should match with the expected Schema
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)
+	at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)
+	at ✽.Validate output schema with expectedSchema "gcsOverrideSchema"(file:src/e2e-test/features/gcs/source/GCSSourceToBigQuery.feature:74)
+]]></failure>
 </testcase>
-<testcase classname="GCS source - Verification of GCS to BQ successful data transfer" name="To verify Successful GCS to BigQuery data transfer with Delimiter" time="136.461789">
-<system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
+<testcase classname="GCS source - Verification of GCS to BQ successful data transfer" name="To verify Successful GCS to BigQuery data transfer with Delimiter" time="15.036229">
+<failure message="java.lang.AssertionError: Schema displayed on UI should match with the expected Schema&#10;&#9;at org.junit.Assert.fail(Assert.java:89)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:42)&#10;&#9;at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)&#10;&#9;at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)&#10;&#9;at ✽.Validate output schema with expectedSchema &quot;gcsDelimitedFileSchema&quot;(file:src/e2e-test/features/gcs/source/GCSSourceToBigQuery.feature:101)&#10;"><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Source is GCS..........................................................passed
 When Sink is BigQuery.......................................................passed
 Then Connect source as "GCS" and sink as "BigQuery" to establish connection.passed
@@ -188,23 +426,31 @@ Then Enter GCS source property path "gcsDelimitedFile"......................pass
 Then Select GCS property format "delimited".................................passed
 Then Enter GCS property delimiter "gcsDelimiter"............................passed
 Then Toggle GCS source property skip header to true.........................passed
-Then Validate output schema with expectedSchema "gcsDelimitedFileSchema"....passed
-Then Validate "GCS" plugin properties.......................................passed
-Then Close the GCS properties...............................................passed
-Then Open BigQuery sink properties..........................................passed
-Then Enter the BigQuery sink mandatory properties...........................passed
-Then Validate "BigQuery" plugin properties..................................passed
-Then Close the BigQuery properties..........................................passed
-Then Save and Deploy Pipeline...............................................passed
-Then Run the Pipeline in Runtime............................................passed
-Then Wait till pipeline is in running state.................................passed
-Then Open and capture logs..................................................passed
-Then Verify the pipeline status is "Succeeded"..............................passed
-Then Get count of no of records transferred to target BigQuery Table........passed
-]]></system-out>
+Then Validate output schema with expectedSchema "gcsDelimitedFileSchema"....failed
+Then Validate "GCS" plugin properties.......................................skipped
+Then Close the GCS properties...............................................skipped
+Then Open BigQuery sink properties..........................................skipped
+Then Enter the BigQuery sink mandatory properties...........................skipped
+Then Validate "BigQuery" plugin properties..................................skipped
+Then Close the BigQuery properties..........................................skipped
+Then Save and Deploy Pipeline...............................................skipped
+Then Run the Pipeline in Runtime............................................skipped
+Then Wait till pipeline is in running state.................................skipped
+Then Open and capture logs..................................................skipped
+Then Verify the pipeline status is "Succeeded"..............................skipped
+Then Get count of no of records transferred to target BigQuery Table........skipped
+
+StackTrace:
+java.lang.AssertionError: Schema displayed on UI should match with the expected Schema
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)
+	at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)
+	at ✽.Validate output schema with expectedSchema "gcsDelimitedFileSchema"(file:src/e2e-test/features/gcs/source/GCSSourceToBigQuery.feature:101)
+]]></failure>
 </testcase>
-<testcase classname="GCS source - Verification of GCS to BQ successful data transfer" name="To verify Successful GCS to BigQuery data transfer with blob file by entering MaxMinSplitSize" time="136.690412">
-<system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
+<testcase classname="GCS source - Verification of GCS to BQ successful data transfer" name="To verify Successful GCS to BigQuery data transfer with blob file by entering MaxMinSplitSize" time="15.61208">
+<failure message="java.lang.AssertionError: Schema displayed on UI should match with the expected Schema&#10;&#9;at org.junit.Assert.fail(Assert.java:89)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:42)&#10;&#9;at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)&#10;&#9;at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)&#10;&#9;at ✽.Validate output schema with expectedSchema &quot;gcsBlobFileSchema&quot;(file:src/e2e-test/features/gcs/source/GCSSourceToBigQuery.feature:127)&#10;"><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Source is GCS..........................................................passed
 When Sink is BigQuery.......................................................passed
 Then Connect source as "GCS" and sink as "BigQuery" to establish connection.passed
@@ -214,23 +460,31 @@ Then Enter GCS source property path "gcsBlobFile"...........................pass
 Then Select GCS property format "blob"......................................passed
 Then Enter GCS source property minimum split size "gcsMinSplitSize" and maximum split size "gcsMaxSplitSize".passed
 Then Toggle GCS source property skip header to true.........................passed
-Then Validate output schema with expectedSchema "gcsBlobFileSchema".........passed
-Then Validate "GCS" plugin properties.......................................passed
-Then Close the GCS properties...............................................passed
-Then Open BigQuery sink properties..........................................passed
-Then Enter the BigQuery sink mandatory properties...........................passed
-Then Validate "BigQuery" plugin properties..................................passed
-Then Close the BigQuery properties..........................................passed
-Then Save and Deploy Pipeline...............................................passed
-Then Run the Pipeline in Runtime............................................passed
-Then Wait till pipeline is in running state.................................passed
-Then Open and capture logs..................................................passed
-Then Verify the pipeline status is "Succeeded"..............................passed
-Then Get count of no of records transferred to target BigQuery Table........passed
-]]></system-out>
+Then Validate output schema with expectedSchema "gcsBlobFileSchema".........failed
+Then Validate "GCS" plugin properties.......................................skipped
+Then Close the GCS properties...............................................skipped
+Then Open BigQuery sink properties..........................................skipped
+Then Enter the BigQuery sink mandatory properties...........................skipped
+Then Validate "BigQuery" plugin properties..................................skipped
+Then Close the BigQuery properties..........................................skipped
+Then Save and Deploy Pipeline...............................................skipped
+Then Run the Pipeline in Runtime............................................skipped
+Then Wait till pipeline is in running state.................................skipped
+Then Open and capture logs..................................................skipped
+Then Verify the pipeline status is "Succeeded"..............................skipped
+Then Get count of no of records transferred to target BigQuery Table........skipped
+
+StackTrace:
+java.lang.AssertionError: Schema displayed on UI should match with the expected Schema
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)
+	at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)
+	at ✽.Validate output schema with expectedSchema "gcsBlobFileSchema"(file:src/e2e-test/features/gcs/source/GCSSourceToBigQuery.feature:127)
+]]></failure>
 </testcase>
-<testcase classname="GCS source - Verification of GCS to BQ successful data transfer" name="To verify Successful GCS to BigQuery data transfer using Regex path filter" time="138.789266">
-<system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
+<testcase classname="GCS source - Verification of GCS to BQ successful data transfer" name="To verify Successful GCS to BigQuery data transfer using Regex path filter" time="16.566455">
+<failure message="java.lang.AssertionError: Schema displayed on UI should match with the expected Schema&#10;&#9;at org.junit.Assert.fail(Assert.java:89)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:42)&#10;&#9;at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)&#10;&#9;at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)&#10;&#9;at ✽.Validate output schema with expectedSchema &quot;gcsCsvFileSchema&quot;(file:src/e2e-test/features/gcs/source/GCSSourceToBigQuery.feature:153)&#10;"><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Source is GCS..........................................................passed
 When Sink is BigQuery.......................................................passed
 Then Connect source as "GCS" and sink as "BigQuery" to establish connection.passed
@@ -240,56 +494,88 @@ Then Enter GCS source property path "gcsCsvFile"............................pass
 Then Select GCS property format "csv".......................................passed
 Then Enter GCS source property regex path filter "gcsRegexPathFilter".......passed
 Then Toggle GCS source property skip header to true.........................passed
-Then Validate output schema with expectedSchema "gcsCsvFileSchema"..........passed
-Then Validate "GCS" plugin properties.......................................passed
-Then Close the GCS properties...............................................passed
-Then Open BigQuery sink properties..........................................passed
-Then Enter the BigQuery sink mandatory properties...........................passed
-Then Validate "BigQuery" plugin properties..................................passed
-Then Close the BigQuery properties..........................................passed
-Then Save and Deploy Pipeline...............................................passed
-Then Run the Pipeline in Runtime............................................passed
-Then Wait till pipeline is in running state.................................passed
-Then Open and capture logs..................................................passed
-Then Verify the pipeline status is "Succeeded"..............................passed
-Then Get count of no of records transferred to target BigQuery Table........passed
-]]></system-out>
+Then Validate output schema with expectedSchema "gcsCsvFileSchema"..........failed
+Then Validate "GCS" plugin properties.......................................skipped
+Then Close the GCS properties...............................................skipped
+Then Open BigQuery sink properties..........................................skipped
+Then Enter the BigQuery sink mandatory properties...........................skipped
+Then Validate "BigQuery" plugin properties..................................skipped
+Then Close the BigQuery properties..........................................skipped
+Then Save and Deploy Pipeline...............................................skipped
+Then Run the Pipeline in Runtime............................................skipped
+Then Wait till pipeline is in running state.................................skipped
+Then Open and capture logs..................................................skipped
+Then Verify the pipeline status is "Succeeded"..............................skipped
+Then Get count of no of records transferred to target BigQuery Table........skipped
+
+StackTrace:
+java.lang.AssertionError: Schema displayed on UI should match with the expected Schema
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)
+	at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)
+	at ✽.Validate output schema with expectedSchema "gcsCsvFileSchema"(file:src/e2e-test/features/gcs/source/GCSSourceToBigQuery.feature:153)
+]]></failure>
 </testcase>
-<testcase classname="GCS source - Validate GCS plugin output schema for different formats" name="GCS Source output schema validation" time="19.44228">
-<system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
+<testcase classname="GCS source - Validate GCS plugin output schema for different formats" name="GCS Source output schema validation" time="13.875534">
+<failure message="java.lang.AssertionError: Schema displayed on UI should match with the expected Schema&#10;&#9;at org.junit.Assert.fail(Assert.java:89)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:42)&#10;&#9;at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)&#10;&#9;at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)&#10;&#9;at ✽.Validate output schema with expectedSchema &quot;gcsCsvFileSchema&quot;(file:src/e2e-test/features/gcs/source/GCSourceSchema.feature:12)&#10;"><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Source is GCS..........................................................passed
 Then Open GCS source properties.............................................passed
 Then Enter GCS property projectId and reference name........................passed
 Then Enter GCS source property path "gcsCsvFile"............................passed
 Then Select GCS property format "csv".......................................passed
 Then Toggle GCS source property skip header to true.........................passed
-Then Validate output schema with expectedSchema "gcsCsvFileSchema"..........passed
-]]></system-out>
+Then Validate output schema with expectedSchema "gcsCsvFileSchema"..........failed
+
+StackTrace:
+java.lang.AssertionError: Schema displayed on UI should match with the expected Schema
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)
+	at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)
+	at ✽.Validate output schema with expectedSchema "gcsCsvFileSchema"(file:src/e2e-test/features/gcs/source/GCSourceSchema.feature:12)
+]]></failure>
 </testcase>
-<testcase classname="GCS source - Validate GCS plugin output schema for different formats" name="GCS Source output schema validation 2" time="17.629624">
-<system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
+<testcase classname="GCS source - Validate GCS plugin output schema for different formats" name="GCS Source output schema validation 2" time="13.402476">
+<failure message="java.lang.AssertionError: Schema displayed on UI should match with the expected Schema&#10;&#9;at org.junit.Assert.fail(Assert.java:89)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:42)&#10;&#9;at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)&#10;&#9;at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)&#10;&#9;at ✽.Validate output schema with expectedSchema &quot;gcsTsvFileSchema&quot;(file:src/e2e-test/features/gcs/source/GCSourceSchema.feature:12)&#10;"><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Source is GCS..........................................................passed
 Then Open GCS source properties.............................................passed
 Then Enter GCS property projectId and reference name........................passed
 Then Enter GCS source property path "gcsTsvFile"............................passed
 Then Select GCS property format "tsv".......................................passed
 Then Toggle GCS source property skip header to true.........................passed
-Then Validate output schema with expectedSchema "gcsTsvFileSchema"..........passed
-]]></system-out>
+Then Validate output schema with expectedSchema "gcsTsvFileSchema"..........failed
+
+StackTrace:
+java.lang.AssertionError: Schema displayed on UI should match with the expected Schema
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)
+	at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)
+	at ✽.Validate output schema with expectedSchema "gcsTsvFileSchema"(file:src/e2e-test/features/gcs/source/GCSourceSchema.feature:12)
+]]></failure>
 </testcase>
-<testcase classname="GCS source - Validate GCS plugin output schema for different formats" name="GCS Source output schema validation 3" time="15.781941">
-<system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
+<testcase classname="GCS source - Validate GCS plugin output schema for different formats" name="GCS Source output schema validation 3" time="13.941964">
+<failure message="java.lang.AssertionError: Schema displayed on UI should match with the expected Schema&#10;&#9;at org.junit.Assert.fail(Assert.java:89)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:42)&#10;&#9;at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)&#10;&#9;at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)&#10;&#9;at ✽.Validate output schema with expectedSchema &quot;gcsBlobFileSchema&quot;(file:src/e2e-test/features/gcs/source/GCSourceSchema.feature:12)&#10;"><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Source is GCS..........................................................passed
 Then Open GCS source properties.............................................passed
 Then Enter GCS property projectId and reference name........................passed
 Then Enter GCS source property path "gcsBlobFile"...........................passed
 Then Select GCS property format "blob"......................................passed
 Then Toggle GCS source property skip header to true.........................passed
-Then Validate output schema with expectedSchema "gcsBlobFileSchema".........passed
-]]></system-out>
+Then Validate output schema with expectedSchema "gcsBlobFileSchema".........failed
+
+StackTrace:
+java.lang.AssertionError: Schema displayed on UI should match with the expected Schema
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)
+	at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)
+	at ✽.Validate output schema with expectedSchema "gcsBlobFileSchema"(file:src/e2e-test/features/gcs/source/GCSourceSchema.feature:12)
+]]></failure>
 </testcase>
-<testcase classname="GCS source - Validate GCS plugin output schema for different formats" name="GCS Source output schema validation for delimited files" time="17.926034">
-<system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
+<testcase classname="GCS source - Validate GCS plugin output schema for different formats" name="GCS Source output schema validation for delimited files" time="13.155894">
+<failure message="java.lang.AssertionError: Schema displayed on UI should match with the expected Schema&#10;&#9;at org.junit.Assert.fail(Assert.java:89)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:42)&#10;&#9;at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)&#10;&#9;at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)&#10;&#9;at ✽.Validate output schema with expectedSchema &quot;gcsDelimitedFileSchema&quot;(file:src/e2e-test/features/gcs/source/GCSourceSchema.feature:36)&#10;"><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Source is GCS..........................................................passed
 Then Open GCS source properties.............................................passed
 Then Enter GCS property projectId and reference name........................passed
@@ -297,10 +583,18 @@ Then Enter GCS source property path "gcsDelimitedFile"......................pass
 Then Select GCS property format "delimited".................................passed
 Then Enter GCS property delimiter "gcsDelimiter"............................passed
 Then Toggle GCS source property skip header to true.........................passed
-Then Validate output schema with expectedSchema "gcsDelimitedFileSchema"....passed
-]]></system-out>
+Then Validate output schema with expectedSchema "gcsDelimitedFileSchema"....failed
+
+StackTrace:
+java.lang.AssertionError: Schema displayed on UI should match with the expected Schema
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)
+	at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)
+	at ✽.Validate output schema with expectedSchema "gcsDelimitedFileSchema"(file:src/e2e-test/features/gcs/source/GCSourceSchema.feature:36)
+]]></failure>
 </testcase>
-<testcase classname="GCS source - Validate GCS plugin output schema for different formats" name="GCS Source output schema validation for delimited files 2" time="16.182198">
+<testcase classname="GCS source - Validate GCS plugin output schema for different formats" name="GCS Source output schema validation for delimited files 2" time="13.06248">
 <system-out><![CDATA[Given Open Datafusion Project to configure pipeline.........................passed
 When Source is GCS..........................................................passed
 Then Open GCS source properties.............................................passed

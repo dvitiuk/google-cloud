@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber Reports</td>
         <td>1</td>
-      <td>18 Mar 2022, 21:03</td>
+      <td>22 Mar 2022, 21:01</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">PubSub-Sink - Verification of GCS to PubSub successful data transfer</td>
-          <td      class="passed"    >32</td>
-          <td >0</td>
-          <td >0</td>
+          <td      class="passed"    >5</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >26</td>
           <td >0</td>
           <td >0</td>
           <td class="total">32</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="155430705721">2:35.430</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="132694915018">2:12.694</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -176,7 +176,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">PubSub-Sink - Verification of GCS to PubSub successful data transfer</span>
 
@@ -199,12 +199,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2:35.430</span>
+  <span class="lead-duration duration">2:12.694</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">To verify data is getting transferred from GCS to PubSub successfully</span>
 
@@ -215,7 +215,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -253,7 +253,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">TestSetupHooks.createBucketWithCSVFile()</span>
 
-  <span class="lead-duration duration">0.838</span>
+  <span class="lead-duration duration">0.783</span>
 
           </div>
 
@@ -269,7 +269,7 @@ $(document).ready(function() {
         </div>
         <div id="output-3" class="collapse collapsable-details " >
           
-          <pre><p>Created GCS Bucket cdf-e2e-test-bde62760-71e0-4aa9-b812-5dab34ad2cab containing testdata/GCS_CSV_TEST.csv file</p></pre>
+          <pre><p>Created GCS Bucket cdf-e2e-test-f15aa4f7-626d-4b01-89d2-ca78a2e40cb6 containing testdata/GCS_CSV_TEST.csv file</p></pre>
         </div>
       </div>
   </div>
@@ -297,7 +297,7 @@ $(document).ready(function() {
         </div>
         <div id="output-4" class="collapse collapsable-details " >
           
-          <pre><p>Target PubSub topic cdf-e2e-test-b6534f96-a1db-49e1-9764-0eae39ff86dc</p></pre>
+          <pre><p>Target PubSub topic cdf-e2e-test-509e66dd-c0fa-4f6e-8e90-1360c6b205eb</p></pre>
         </div>
       </div>
   </div>
@@ -310,9 +310,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -322,7 +322,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-5" class="inner-level collapse collapsable-details ">
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -330,7 +330,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">Open Datafusion Project to configure pipeline</span>
 
-  <span class="lead-duration duration">2.889</span>
+  <span class="lead-duration duration">1.861</span>
 
 </div>
 
@@ -367,7 +367,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.156</span>
+  <span class="lead-duration duration">0.172</span>
 
           </div>
 
@@ -404,7 +404,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Source is GCS</span>
 
-  <span class="lead-duration duration">0.204</span>
+  <span class="lead-duration duration">0.165</span>
 
 </div>
 
@@ -441,7 +441,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.225</span>
+  <span class="lead-duration duration">0.277</span>
 
           </div>
 
@@ -454,13 +454,13 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-9" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-21499695.png" download target="_blank">
+      <a href="embeddings/embedding_-1923458886.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-9" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-21499695.png">
+        <img src="embeddings/embedding_-1923458886.png">
       </div>
     </div>
   </div>
@@ -478,7 +478,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Sink is PubSub</span>
 
-  <span class="lead-duration duration">0.334</span>
+  <span class="lead-duration duration">0.341</span>
 
 </div>
 
@@ -515,7 +515,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.200</span>
+  <span class="lead-duration duration">0.202</span>
 
           </div>
 
@@ -528,13 +528,13 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-11" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_708095923.png" download target="_blank">
+      <a href="embeddings/embedding_2147312420.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-11" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_708095923.png">
+        <img src="embeddings/embedding_2147312420.png">
       </div>
     </div>
   </div>
@@ -552,7 +552,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Open GCS source properties</span>
 
-  <span class="lead-duration duration">0.167</span>
+  <span class="lead-duration duration">0.176</span>
 
 </div>
 
@@ -589,7 +589,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.315</span>
+  <span class="lead-duration duration">0.345</span>
 
           </div>
 
@@ -626,7 +626,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Enter the GCS source mandatory properties</span>
 
-  <span class="lead-duration duration">9.887</span>
+  <span class="lead-duration duration">8.270</span>
 
 </div>
 
@@ -663,7 +663,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.199</span>
+  <span class="lead-duration duration">0.166</span>
 
           </div>
 
@@ -676,13 +676,13 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-15" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1642725713.png" download target="_blank">
+      <a href="embeddings/embedding_344782455.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-15" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1642725713.png">
+        <img src="embeddings/embedding_344782455.png">
       </div>
     </div>
   </div>
@@ -696,11 +696,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">Validate <span class="argument">&quot;GCS&quot;</span> plugin properties</span>
 
-  <span class="lead-duration duration">2.475</span>
+  <span class="lead-duration duration">2:1.878</span>
 
 </div>
 
@@ -708,6 +708,105 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-16">
+          <a>org.openqa.selenium.TimeoutException:</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@data-cy='plugin-validation-success-msg']' (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at io.cdap.e2e.utils.WaitHelper.waitForElementToBeDisplayed(WaitHelper.java:84)
+	at io.cdap.e2e.utils.WaitHelper.waitForElementToBeDisplayed(WaitHelper.java:94)
+	at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyIfPluginIsValidatedSuccessfully(CdfPluginPropertiesActions.java:75)
+	at stepsdesign.PipelineSteps.validatePluginProperties(PipelineSteps.java:119)
+	at &#10045;.Validate &quot;GCS&quot; plugin properties(file:src/e2e-test/features/pubsub/sink/GCSToPubSub.feature:11)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@data-cy='plugin-validation-success-msg']&quot;}
+  (Session info: headless chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
+System info: host: 'runner-deployment-build-e2e-data-integrations-b8699d88f-mmfkp', ip: '10.116.17.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.170+', java.version: '1.8.0_312'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d4ec3f52a951eabf3c7d2deb8bd50e1, findElement {using=xpath, value=//*[@data-cy='plugin-validation-success-msg']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.hk7iKB}, goog:chromeOptions: {debuggerAddress: localhost:42413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42413/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d4ec3f52a951eabf3c7d2deb8bd50e1
+	at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:381)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy21.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:211)
+	at io.cdap.e2e.utils.WaitHelper.waitForElementToBeDisplayed(WaitHelper.java:84)
+	at io.cdap.e2e.utils.WaitHelper.waitForElementToBeDisplayed(WaitHelper.java:94)
+	at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyIfPluginIsValidatedSuccessfully(CdfPluginPropertiesActions.java:75)
+	at stepsdesign.PipelineSteps.validatePluginProperties(PipelineSteps.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:46)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at org.apache.maven.surefire.junitcore.pc.InvokerStrategy.schedule(InvokerStrategy.java:54)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler.schedule(Scheduler.java:362)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -719,7 +818,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-16">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-17">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -731,13 +830,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-16" class="inner-level collapse collapsable-details ">
+    <div id="after-17" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.224</span>
+  <span class="lead-duration duration">0.163</span>
 
           </div>
 
@@ -748,15 +847,15 @@ $(document).ready(function() {
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-17" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-18" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-947432689.png" download target="_blank">
+      <a href="embeddings/embedding_887214401.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-17" class="collapse collapsable-details ">
+    <div id="embedding-18" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-947432689.png">
+        <img src="embeddings/embedding_887214401.png">
       </div>
     </div>
   </div>
@@ -770,11 +869,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">Close the GCS properties</span>
 
-  <span class="lead-duration duration">0.271</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -793,9 +892,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-18">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-19">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -805,13 +904,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-18" class="inner-level collapse collapsable-details ">
+    <div id="after-19" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.178</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -820,21 +919,6 @@ $(document).ready(function() {
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-19" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_2019752828.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-19" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_2019752828.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
@@ -844,11 +928,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">Open the PubSub sink properties</span>
 
-  <span class="lead-duration duration">0.172</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -867,9 +951,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-20">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-20">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -879,13 +963,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-20" class="inner-level collapse collapsable-details ">
+    <div id="after-20" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.281</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -894,21 +978,6 @@ $(document).ready(function() {
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-21" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_189014937.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-21" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_189014937.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
@@ -918,11 +987,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">Enter PubSub property projectId <span class="argument">&quot;projectId&quot;</span></span>
 
-  <span class="lead-duration duration">1.019</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -941,9 +1010,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-22">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-21">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -953,13 +1022,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-22" class="inner-level collapse collapsable-details ">
+    <div id="after-21" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.174</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -968,21 +1037,6 @@ $(document).ready(function() {
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-23" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-358260887.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-23" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-358260887.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
@@ -992,11 +1046,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">Enter PubSub property reference name</span>
 
-  <span class="lead-duration duration">0.625</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1015,9 +1069,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-24">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-22">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1027,13 +1081,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-24" class="inner-level collapse collapsable-details ">
+    <div id="after-22" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.172</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1042,21 +1096,6 @@ $(document).ready(function() {
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-25" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_740176490.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-25" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_740176490.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
@@ -1066,11 +1105,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">Enter PubSub sink property topic name</span>
 
-  <span class="lead-duration duration">1.026</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1089,9 +1128,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-26">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-23">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1101,13 +1140,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-26" class="inner-level collapse collapsable-details ">
+    <div id="after-23" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.196</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1116,21 +1155,6 @@ $(document).ready(function() {
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-27" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1439127811.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-27" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-1439127811.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
@@ -1140,11 +1164,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">Select PubSub property format <span class="argument">&quot;csv&quot;</span></span>
 
-  <span class="lead-duration duration">0.768</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1163,9 +1187,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-28">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-24">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1175,13 +1199,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-28" class="inner-level collapse collapsable-details ">
+    <div id="after-24" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.181</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1190,21 +1214,6 @@ $(document).ready(function() {
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-29" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1661794784.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-29" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-1661794784.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
@@ -1214,11 +1223,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">Enter PubSub sink property encryption key name <span class="argument">&quot;cmekPubSub&quot;</span> if cmek is enabled</span>
 
-  <span class="lead-duration duration">1.297</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1232,26 +1241,14 @@ $(document).ready(function() {
 
 
 
-  <div class="outputs inner-level">
-      <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-30">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-30" class="collapse collapsable-details " >
-          
-          <pre><p>Entered encryption key name - projects/cdf-athena/locations/us/keyRings/pubsub-cmek-test/cryptoKeys/test_key</p></pre>
-        </div>
-      </div>
-  </div>
 
 
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-31">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-25">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1261,13 +1258,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-31" class="inner-level collapse collapsable-details ">
+    <div id="after-25" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.182</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1276,21 +1273,6 @@ $(document).ready(function() {
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-32" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_682716971.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-32" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_682716971.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
@@ -1300,11 +1282,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">Enter PubSub sink property MaximumBatchCount <span class="argument">&quot;pubSubMaximumBatchCount&quot;</span></span>
 
-  <span class="lead-duration duration">0.485</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1323,9 +1305,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-33">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-26">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1335,13 +1317,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-33" class="inner-level collapse collapsable-details ">
+    <div id="after-26" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.180</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1350,21 +1332,6 @@ $(document).ready(function() {
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-34" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_1624344886.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-34" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_1624344886.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
@@ -1374,11 +1341,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">Enter PubSub sink property MaximumBatchSize <span class="argument">&quot;pubSubMaximumBatchSize&quot;</span></span>
 
-  <span class="lead-duration duration">0.345</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1397,9 +1364,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-35">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-27">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1409,13 +1376,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-35" class="inner-level collapse collapsable-details ">
+    <div id="after-27" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.188</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1424,21 +1391,6 @@ $(document).ready(function() {
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-36" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-204167130.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-36" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-204167130.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
@@ -1448,11 +1400,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">Enter PubSub sink property PublishDelayThreshold <span class="argument">&quot;pubSubPublishDelayThreshold&quot;</span></span>
 
-  <span class="lead-duration duration">0.374</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1471,9 +1423,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-37">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-28">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1483,13 +1435,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-37" class="inner-level collapse collapsable-details ">
+    <div id="after-28" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.179</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1498,21 +1450,6 @@ $(document).ready(function() {
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-38" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_74710453.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-38" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_74710453.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
@@ -1522,11 +1459,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">Enter PubSub sink property RetryTimeOut <span class="argument">&quot;pubSubRetryTimeOut&quot;</span></span>
 
-  <span class="lead-duration duration">0.412</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1545,9 +1482,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-39">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-29">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1557,13 +1494,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-39" class="inner-level collapse collapsable-details ">
+    <div id="after-29" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.203</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1572,21 +1509,6 @@ $(document).ready(function() {
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-40" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_297296886.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-40" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_297296886.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
@@ -1596,11 +1518,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">Enter PubSub sink property ErrorThreshold <span class="argument">&quot;pubSubErrorThreshold&quot;</span></span>
 
-  <span class="lead-duration duration">0.336</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1619,9 +1541,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-41">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-30">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1631,13 +1553,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-41" class="inner-level collapse collapsable-details ">
+    <div id="after-30" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.180</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1646,21 +1568,6 @@ $(document).ready(function() {
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-42" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-64842554.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-42" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-64842554.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
@@ -1670,11 +1577,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">Validate <span class="argument">&quot;PubSub&quot;</span> plugin properties</span>
 
-  <span class="lead-duration duration">2.897</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1693,9 +1600,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-43">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-31">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1705,13 +1612,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-43" class="inner-level collapse collapsable-details ">
+    <div id="after-31" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.171</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1720,21 +1627,6 @@ $(document).ready(function() {
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-44" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1505657404.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-44" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-1505657404.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
@@ -1744,11 +1636,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">Close the PubSub properties</span>
 
-  <span class="lead-duration duration">0.085</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1767,6 +1659,754 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-32">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-32" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
+              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Connect source as <span class="argument">&quot;GCS&quot;</span> and sink as <span class="argument">&quot;GooglePublisher&quot;</span> to establish connection</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-33">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-33" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
+              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Save the pipeline</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-34">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-34" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
+              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Preview and run the pipeline</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-35">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-35" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
+              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Verify the preview of pipeline is <span class="argument">&quot;success&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-36">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-36" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
+              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Close the preview</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-37">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-37" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
+              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Deploy the pipeline</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-38">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-38" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
+              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Run the Pipeline in Runtime</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-39">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-39" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
+              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Wait till pipeline is in running state</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-40">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-40" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
+              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Verify the pipeline status is <span class="argument">&quot;Succeeded&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-41">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-41" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
+              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Validate OUT record count is equal to IN record count</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-42">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-42" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
+              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Open and capture logs</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-43">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-43" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
+              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Validate the cmek key <span class="argument">&quot;cmekPubSub&quot;</span> of target PubSub topic if cmek is enabled</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-44">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-44" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
+              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
     <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-45">
 
 <div class="brief passed">
@@ -1783,996 +2423,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
-
-  <span class="lead-duration duration">0.192</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-46" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1254527842.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-46" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-1254527842.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Connect source as <span class="argument">&quot;GCS&quot;</span> and sink as <span class="argument">&quot;GooglePublisher&quot;</span> to establish connection</span>
-
-  <span class="lead-duration duration">0.395</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-47">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-47" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
-
-  <span class="lead-duration duration">0.207</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-48" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1815983232.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-48" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-1815983232.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Save the pipeline</span>
-
-  <span class="lead-duration duration">4.401</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-49">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-49" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
-
-  <span class="lead-duration duration">0.162</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-50" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-2034440044.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-50" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-2034440044.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Preview and run the pipeline</span>
-
-  <span class="lead-duration duration">0.437</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-51">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-51" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
-
-  <span class="lead-duration duration">0.231</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-52" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1181792710.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-52" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-1181792710.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Verify the preview of pipeline is <span class="argument">&quot;success&quot;</span></span>
-
-  <span class="lead-duration duration">22.805</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-53">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-53" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
-
-  <span class="lead-duration duration">0.218</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-54" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1185110163.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-54" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-1185110163.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Close the preview</span>
-
-  <span class="lead-duration duration">0.271</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-55">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-55" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
-
-  <span class="lead-duration duration">0.277</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-56" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1442300483.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-56" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-1442300483.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Deploy the pipeline</span>
-
-  <span class="lead-duration duration">8.314</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-57">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-57" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
-
-  <span class="lead-duration duration">0.373</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-58" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_926364913.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-58" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_926364913.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Run the Pipeline in Runtime</span>
-
-  <span class="lead-duration duration">0.370</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-59">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-59" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
-
-  <span class="lead-duration duration">0.349</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-60" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1493954473.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-60" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-1493954473.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Wait till pipeline is in running state</span>
-
-  <span class="lead-duration duration">1:30.592</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-61">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-61" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
-
-  <span class="lead-duration duration">0.186</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-62" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_694389646.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-62" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_694389646.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Verify the pipeline status is <span class="argument">&quot;Succeeded&quot;</span></span>
-
-  <span class="lead-duration duration">0.030</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-63">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-63" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
-
-  <span class="lead-duration duration">0.210</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-64" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_694389646.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-64" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_694389646.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Validate OUT record count is equal to IN record count</span>
-
-  <span class="lead-duration duration">0.059</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-65">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-65" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
-
-  <span class="lead-duration duration">0.209</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-66" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_694389646.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-66" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_694389646.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Open and capture logs</span>
-
-  <span class="lead-duration duration">1.517</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-  <div class="outputs inner-level">
-      <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-67">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-67" class="collapse collapsable-details " >
-          
-          <pre><p>2022-03-18 21:01:40,812 - DEBUG [provisioning-task-6:i.c.c.i.p.t.ProvisioningTask@125] - Executing PROVISION subtask REQUESTING_CREATE for program run program_run:default.TestPipeline-jeA0Bwlknp.-SNAPSHOT.workflow.DataPipelineWorkflow.9b4b7411-a6fe-11ec-ba38-fea91ab18eef.
-2022-03-18 21:01:40,813 - DEBUG [provisioning-task-6:i.c.c.i.p.t.ProvisioningTask@129] - Completed PROVISION subtask REQUESTING_CREATE for program run program_run:default.TestPipeline-jeA0Bwlknp.-SNAPSHOT.workflow.DataPipelineWorkflow.9b4b7411-a6fe-11ec-ba38-fea91ab18eef.
-2022-03-18 21:01:40,883 - DEBUG [provisioning-task-6:i.c.c.i.p.t.ProvisioningTask@116] - Completed PROVISION task for program run program_run:default.TestPipeline-jeA0Bwlknp.-SNAPSHOT.workflow.DataPipelineWorkflow.9b4b7411-a6fe-11ec-ba38-fea91ab18eef.
-2022-03-18 21:01:51,444 - INFO  [WorkflowDriver:i.c.c.d.SmartWorkflow@471] - Pipeline 'TestPipeline-jeA0Bwlknp' is started by user 'runner' with arguments {logical.start.time=1647637299896}
-2022-03-18 21:01:51,547 - INFO  [WorkflowDriver:i.c.c.d.SmartWorkflow@506] - Pipeline 'TestPipeline-jeA0Bwlknp' running
-2022-03-18 21:01:51,550 - DEBUG [WorkflowDriver:i.c.c.i.a.r.w.WorkflowProgramController@71] - Workflow service workflow.default.TestPipeline-jeA0Bwlknp.DataPipelineWorkflow.9b4b7411-a6fe-11ec-ba38-fea91ab18eef started
-2022-03-18 21:01:51,551 - INFO  [WorkflowDriver:i.c.c.i.a.r.w.WorkflowDriver@623] - Starting workflow execution for 'DataPipelineWorkflow' with Run id '9b4b7411-a6fe-11ec-ba38-fea91ab18eef'
-2022-03-18 21:01:51,851 - INFO  [action-phase-1-0:i.c.c.i.a.r.w.WorkflowDriver@337] - Starting Spark Program 'phase-1' in workflow
-2022-03-18 21:01:51,996 - DEBUG [action-phase-1-0:i.c.c.a.r.s.SparkProgramRunner@230] - Starting Spark Job. Context: SparkRuntimeContext{id=program:default.TestPipeline-jeA0Bwlknp.-SNAPSHOT.spark.phase-1, runId=a26ba442-a6fe-11ec-9adf-fea91ab18eef}
-2022-03-18 21:02:04,409 - DEBUG [SparkRunnerphase-1:i.c.c.i.a.r.LocalizationUtils@55] - Hard link file from /tmp/HydratorSpark9081694046041893245.config to /tmp/google-cloud/google-cloud/sandbox/cdap-sandbox-6.7.0-SNAPSHOT/data/tmp/1647637312009-0/HydratorSpark.config
-2022-03-18 21:02:04,475 - DEBUG [spark-submitter-phase-1-a26ba442-a6fe-11ec-9adf-fea91ab18eef:i.c.c.a.r.s.s.AbstractSparkSubmitter@192] - Calling SparkSubmit for program:default.TestPipeline-jeA0Bwlknp.-SNAPSHOT.spark.phase-1 a26ba442-a6fe-11ec-9adf-fea91ab18eef: [--master, local[2], --conf, spark.app.name=phase-1, --conf, spark.executor.memory=2048m, --conf, spark.driver.memory=2048m, --conf, spark.local.dir=/tmp/google-cloud/google-cloud/sandbox/cdap-sandbox-6.7.0-SNAPSHOT/data/tmp/1647637312009-0, --conf, spark.driver.cores=1, --conf, spark.yarn.maxAppAttempts=1, --conf, spark.executor.id=TestPipeline-jeA0Bwlknp, --conf, spark.network.timeout=600s, --conf, spark.executor.cores=1, --conf, spark.metrics.conf=/tmp/google-cloud/google-cloud/sandbox/cdap-sandbox-6.7.0-SNAPSHOT/data/tmp/1647637312009-0/metrics.properties, --conf, spark.speculation=false, --conf, spark.sql.caseSensitive=true, --conf, spark.app.id=TestPipeline-jeA0Bwlknp, --conf, spark.maxRemoteBlockSizeFetchToMem=2147483135, --conf, spark.extraListeners=io.cdap.cdap.app.runtime.spark.DelegatingSparkListener, --conf, spark.sql.autoBroadcastJoinThreshold=-1, --conf, spark.executor.extraJavaOptions=-Dstreaming.checkpoint.rewrite.enabled=true, --conf, spark.cdap.localized.resources=[&quot;HydratorSpark.config&quot;], --conf, spark.driver.extraJavaOptions=-Dstreaming.checkpoint.rewrite.enabled=true, --class, io.cdap.cdap.app.runtime.spark.SparkMainWrapper, /tmp/google-cloud/google-cloud/sandbox/cdap-sandbox-6.7.0-SNAPSHOT/data/runtime/spark/cdapSparkJob.jar, --cdap.spark.program=program_run:default.TestPipeline-jeA0Bwlknp.-SNAPSHOT.spark.phase-1.a26ba442-a6fe-11ec-9adf-fea91ab18eef, --cdap.user.main.class=io.cdap.cdap.etl.spark.batch.BatchSparkPipelineDriver]
-2022-03-18 21:02:04,734 - INFO  [SparkDriverHttpService STARTING:i.c.h.NettyHttpService@181] - Starting HTTP Service phase-1-http-service at address localhost/127.0.0.1:0
-2022-03-18 21:02:04,736 - DEBUG [SparkDriverHttpService STARTING:i.c.h.NettyHttpService@191] - Started HTTP Service phase-1-http-service at address /127.0.0.1:38111
-2022-03-18 21:02:04,869 - INFO  [spark-submitter-phase-1-a26ba442-a6fe-11ec-9adf-fea91ab18eef:i.c.c.a.r.s.SparkMainWrapper$@78] - Launching user spark class class io.cdap.cdap.etl.spark.batch.BatchSparkPipelineDriver
-2022-03-18 21:02:05,056 - WARN  [spark-submitter-phase-1-a26ba442-a6fe-11ec-9adf-fea91ab18eef:o.a.s.SparkConf@66] - In Spark 1.0 and later spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone and LOCAL_DIRS in YARN).
-2022-03-18 21:02:08,451 - DEBUG [spark-submitter-phase-1-a26ba442-a6fe-11ec-9adf-fea91ab18eef:i.c.c.a.r.s.SparkMetricsSink@55] - Using SparkMetricsSink for reporting metrics: {class=io.cdap.cdap.app.runtime.spark.SparkMetricsSink}
-2022-03-18 21:02:13,552 - DEBUG [SparkListenerBus:i.c.c.a.r.s.AbstractSparkExecutionContext@156] - Spark program=program:default.TestPipeline-jeA0Bwlknp.-SNAPSHOT.spark.phase-1, runId=a26ba442-a6fe-11ec-9adf-fea91ab18eef, jobId=0 starts with auto-commit=false on transaction Transaction{readPointer: 1647637327964000000, transactionId: 1647637328786000000, writePointer: 1647637328786000000, invalids: [1647461152471000000, 1647462299835000000, 1647489686863000000, 1647490773065000000, 1647537113112000000, 1647538184969000000, 1647546488688000000, 1647547656535000000, 1647625927438000000, 1647626982352000000, 1647634744622000000, 1647635784936000000], inProgress: [], firstShortInProgress: 9223372036854775807, type: LONG, checkpointWritePointers: [], visibilityLevel: SNAPSHOT}
-2022-03-18 21:02:13,573 - DEBUG [SparkListenerBus:i.c.c.a.r.s.SparkTransactionHandler@110] - Spark job started: JobTransaction{jobId=0, stageIds=[0], transaction=Transaction{readPointer: 1647637327964000000, transactionId: 1647637328786000000, writePointer: 1647637328786000000, invalids: [1647461152471000000, 1647462299835000000, 1647489686863000000, 1647490773065000000, 1647537113112000000, 1647538184969000000, 1647546488688000000, 1647547656535000000, 1647625927438000000, 1647626982352000000, 1647634744622000000, 1647635784936000000], inProgress: [], firstShortInProgress: 9223372036854775807, type: LONG, checkpointWritePointers: [], visibilityLevel: SNAPSHOT}}
-2022-03-18 21:02:16,578 - DEBUG [SparkListenerBus:i.c.c.a.r.s.SparkTransactionHandler@144] - Spark job ended: JobTransaction{jobId=0, stageIds=[0], transaction=Transaction{readPointer: 1647637327964000000, transactionId: 1647637328786000000, writePointer: 1647637328786000000, invalids: [1647461152471000000, 1647462299835000000, 1647489686863000000, 1647490773065000000, 1647537113112000000, 1647538184969000000, 1647546488688000000, 1647547656535000000, 1647625927438000000, 1647626982352000000, 1647634744622000000, 1647635784936000000], inProgress: [], firstShortInProgress: 9223372036854775807, type: LONG, checkpointWritePointers: [], visibilityLevel: SNAPSHOT}}
-2022-03-18 21:02:16,888 - DEBUG [spark-submitter-phase-1-a26ba442-a6fe-11ec-9adf-fea91ab18eef:i.c.c.a.r.s.SparkRuntimeEnv$@347] - Shutting down Server and ThreadPool used by Spark org.apache.spark.SparkContext@2c334fac
-2022-03-18 21:02:16,896 - INFO  [SparkDriverHttpService STOPPING:i.c.h.NettyHttpService@258] - Stopping HTTP Service phase-1-http-service
-2022-03-18 21:02:16,902 - DEBUG [SparkDriverHttpService STOPPING:i.c.h.NettyHttpService@276] - Stopped HTTP Service phase-1-http-service on address localhost/127.0.0.1:38111
-2022-03-18 21:02:16,903 - DEBUG [spark-submitter-phase-1-a26ba442-a6fe-11ec-9adf-fea91ab18eef:i.c.c.a.r.s.s.AbstractSparkSubmitter@199] - SparkSubmit returned for program:default.TestPipeline-jeA0Bwlknp.-SNAPSHOT.spark.phase-1 a26ba442-a6fe-11ec-9adf-fea91ab18eef
-2022-03-18 21:02:16,910 - DEBUG [SparkRunnerphase-1:i.c.c.a.r.s.SparkRuntimeService@967] - Running Spark shutdown hook org.apache.spark.util.SparkShutdownHookManager$$anon$2@1e4e9b78
-2022-03-18 21:02:17,010 - DEBUG [SparkRunnerphase-1:i.c.c.a.r.s.SparkRuntimeService@444] - Spark program completed: SparkRuntimeContext{id=program:default.TestPipeline-jeA0Bwlknp.-SNAPSHOT.spark.phase-1, runId=a26ba442-a6fe-11ec-9adf-fea91ab18eef}
-2022-03-18 21:02:17,057 - INFO  [action-phase-1-0:i.c.c.i.a.r.w.WorkflowDriver@340] - Spark Program 'phase-1' in workflow completed
-2022-03-18 21:02:17,065 - INFO  [WorkflowDriver:i.c.c.i.a.r.w.WorkflowDriver@631] - Workflow 'DataPipelineWorkflow' with run id '9b4b7411-a6fe-11ec-ba38-fea91ab18eef' completed
-2022-03-18 21:02:17,068 - INFO  [WorkflowDriver:i.c.c.d.SmartWorkflow@564] - Pipeline 'TestPipeline-jeA0Bwlknp' succeeded.
-2022-03-18 21:02:17,204 - DEBUG [WorkflowDriver:i.c.c.i.a.r.w.WorkflowProgramController@77] - Workflow service terminated from RUNNING. Un-registering service workflow.default.TestPipeline-jeA0Bwlknp.DataPipelineWorkflow.9b4b7411-a6fe-11ec-ba38-fea91ab18eef.
-2022-03-18 21:02:17,211 - DEBUG [pcontroller-program:default.TestPipeline-jeA0Bwlknp.-SNAPSHOT.workflow.DataPipelineWorkflow-9b4b7411-a6fe-11ec-ba38-fea91ab18eef-3:i.c.c.a.r.AbstractProgramRuntimeService@646] - RuntimeInfo removed: program_run:default.TestPipeline-jeA0Bwlknp.-SNAPSHOT.workflow.DataPipelineWorkflow.9b4b7411-a6fe-11ec-ba38-fea91ab18eef
-2022-03-18 21:02:18,947 - DEBUG [provisioning-task-7:i.c.c.i.p.t.ProvisioningTask@125] - Executing DEPROVISION subtask REQUESTING_DELETE for program run program_run:default.TestPipeline-jeA0Bwlknp.-SNAPSHOT.workflow.DataPipelineWorkflow.9b4b7411-a6fe-11ec-ba38-fea91ab18eef.
-2022-03-18 21:02:18,948 - DEBUG [provisioning-task-7:i.c.c.i.p.t.ProvisioningTask@129] - Completed DEPROVISION subtask REQUESTING_DELETE for program run program_run:default.TestPipeline-jeA0Bwlknp.-SNAPSHOT.workflow.DataPipelineWorkflow.9b4b7411-a6fe-11ec-ba38-fea91ab18eef.
-2022-03-18 21:02:18,966 - DEBUG [provisioning-task-2:i.c.c.i.p.t.ProvisioningTask@116] - Completed DEPROVISION task for program run program_run:default.TestPipeline-jeA0Bwlknp.-SNAPSHOT.workflow.DataPipelineWorkflow.9b4b7411-a6fe-11ec-ba38-fea91ab18eef.</p></pre>
-        </div>
-      </div>
-  </div>
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-68">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-68" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
-
-  <span class="lead-duration duration">0.280</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-69" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_464471464.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-69" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_464471464.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Validate the cmek key <span class="argument">&quot;cmekPubSub&quot;</span> of target PubSub topic if cmek is enabled</span>
-
-  <span class="lead-duration duration">0.157</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-70">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-70" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
-
-  <span class="lead-duration duration">0.216</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-71" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-162647687.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-71" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-162647687.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-      </div>
-  </div>
-</div>
-
-
-
-
-  <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-72">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-72" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
               <span class="location name">TestSetupHooks.deleteSourceBucketWithFile()</span>
 
-  <span class="lead-duration duration">0.703</span>
+  <span class="lead-duration duration">0.818</span>
 
           </div>
 
@@ -2782,13 +2435,13 @@ $(document).ready(function() {
 
   <div class="outputs inner-level">
       <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-73">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-46">
           Output 1
           <i class="chevron fa fa-fw"></i>
         </div>
-        <div id="output-73" class="collapse collapsable-details " >
+        <div id="output-46" class="collapse collapsable-details " >
           
-          <pre><p>Deleted GCS Bucket cdf-e2e-test-bde62760-71e0-4aa9-b812-5dab34ad2cab</p></pre>
+          <pre><p>Deleted GCS Bucket cdf-e2e-test-f15aa4f7-626d-4b01-89d2-ca78a2e40cb6</p></pre>
         </div>
       </div>
   </div>
@@ -2800,7 +2453,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">TestSetupHooks.deleteTargetPubSubTopic()</span>
 
-  <span class="lead-duration duration">1.387</span>
+  <span class="lead-duration duration">0.119</span>
 
           </div>
 
@@ -2810,13 +2463,13 @@ $(document).ready(function() {
 
   <div class="outputs inner-level">
       <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-74">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-47">
           Output 1
           <i class="chevron fa fa-fw"></i>
         </div>
-        <div id="output-74" class="collapse collapsable-details " >
+        <div id="output-47" class="collapse collapsable-details " >
           
-          <pre><p>Deleted target PubSub topic cdf-e2e-test-b6534f96-a1db-49e1-9764-0eae39ff86dc</p></pre>
+          <pre><p>Target PubSub topic cdf-e2e-test-509e66dd-c0fa-4f6e-8e90-1360c6b205eb does not exist.</p></pre>
         </div>
       </div>
   </div>

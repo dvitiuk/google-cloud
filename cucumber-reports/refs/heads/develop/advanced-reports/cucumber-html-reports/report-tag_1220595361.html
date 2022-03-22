@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber Reports</td>
         <td>1</td>
-      <td>18 Mar 2022, 21:03</td>
+      <td>22 Mar 2022, 21:01</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@GCS_TSV_TEST</td>
-          <td      class="passed"    >8</td>
-          <td >0</td>
+          <td      class="passed"    >7</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">8</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="14106870456">14.106</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="10122682508">10.122</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -184,12 +184,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">14.106</span>
+  <span class="lead-duration duration">10.122</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">GCS Source output schema validation</span>
 
@@ -200,7 +200,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -238,7 +238,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">TestSetupHooks.createBucketWithTSVFile()</span>
 
-  <span class="lead-duration duration">0.989</span>
+  <span class="lead-duration duration">0.819</span>
 
           </div>
 
@@ -254,7 +254,7 @@ $(document).ready(function() {
         </div>
         <div id="output-3" class="collapse collapsable-details " >
           
-          <pre><p>Created GCS Bucket cdf-e2e-test-1673bb03-3027-495a-8afb-5308fed9a98d containing testdata/GCS_TSV_TEST.tsv file</p></pre>
+          <pre><p>Created GCS Bucket cdf-e2e-test-5a0e797c-5378-4eb1-94a2-49294aa4b63d containing testdata/GCS_TSV_TEST.tsv file</p></pre>
         </div>
       </div>
   </div>
@@ -267,9 +267,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-4">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -279,7 +279,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-4" class="inner-level collapse collapsable-details ">
+  <div id="steps-4" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -287,7 +287,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">Open Datafusion Project to configure pipeline</span>
 
-  <span class="lead-duration duration">2.450</span>
+  <span class="lead-duration duration">1.801</span>
 
 </div>
 
@@ -324,7 +324,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.189</span>
+  <span class="lead-duration duration">0.158</span>
 
           </div>
 
@@ -337,13 +337,13 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1956760703.png" download target="_blank">
+      <a href="embeddings/embedding_910631102.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-6" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1956760703.png">
+        <img src="embeddings/embedding_910631102.png">
       </div>
     </div>
   </div>
@@ -361,7 +361,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Source is GCS</span>
 
-  <span class="lead-duration duration">0.219</span>
+  <span class="lead-duration duration">0.144</span>
 
 </div>
 
@@ -398,7 +398,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.232</span>
+  <span class="lead-duration duration">0.425</span>
 
           </div>
 
@@ -435,7 +435,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Open GCS source properties</span>
 
-  <span class="lead-duration duration">0.166</span>
+  <span class="lead-duration duration">0.135</span>
 
 </div>
 
@@ -472,7 +472,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.493</span>
+  <span class="lead-duration duration">0.347</span>
 
           </div>
 
@@ -485,13 +485,13 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-10" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_1983479636.png" download target="_blank">
+      <a href="embeddings/embedding_-1691719047.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-10" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1983479636.png">
+        <img src="embeddings/embedding_-1691719047.png">
       </div>
     </div>
   </div>
@@ -509,7 +509,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Enter GCS property projectId and reference name</span>
 
-  <span class="lead-duration duration">2.786</span>
+  <span class="lead-duration duration">3.110</span>
 
 </div>
 
@@ -546,7 +546,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.174</span>
+  <span class="lead-duration duration">0.179</span>
 
           </div>
 
@@ -559,13 +559,13 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-12" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_298308186.png" download target="_blank">
+      <a href="embeddings/embedding_327106579.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-12" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_298308186.png">
+        <img src="embeddings/embedding_327106579.png">
       </div>
     </div>
   </div>
@@ -583,7 +583,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Enter GCS source property path <span class="argument">&quot;gcsTsvFile&quot;</span></span>
 
-  <span class="lead-duration duration">2.579</span>
+  <span class="lead-duration duration">2.806</span>
 
 </div>
 
@@ -620,7 +620,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.186</span>
+  <span class="lead-duration duration">0.179</span>
 
           </div>
 
@@ -633,13 +633,13 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-14" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-235013886.png" download target="_blank">
+      <a href="embeddings/embedding_1190882233.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-14" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-235013886.png">
+        <img src="embeddings/embedding_1190882233.png">
       </div>
     </div>
   </div>
@@ -657,7 +657,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Select GCS property format <span class="argument">&quot;tsv&quot;</span></span>
 
-  <span class="lead-duration duration">0.428</span>
+  <span class="lead-duration duration">0.434</span>
 
 </div>
 
@@ -694,7 +694,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.196</span>
+  <span class="lead-duration duration">0.222</span>
 
           </div>
 
@@ -707,13 +707,13 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-16" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_1325812751.png" download target="_blank">
+      <a href="embeddings/embedding_-1136810294.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-16" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1325812751.png">
+        <img src="embeddings/embedding_-1136810294.png">
       </div>
     </div>
   </div>
@@ -731,7 +731,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Toggle GCS source property skip header to true</span>
 
-  <span class="lead-duration duration">0.242</span>
+  <span class="lead-duration duration">0.227</span>
 
 </div>
 
@@ -768,7 +768,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.184</span>
+  <span class="lead-duration duration">0.181</span>
 
           </div>
 
@@ -781,13 +781,13 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-18" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1319020086.png" download target="_blank">
+      <a href="embeddings/embedding_-1978926831.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-18" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1319020086.png">
+        <img src="embeddings/embedding_-1978926831.png">
       </div>
     </div>
   </div>
@@ -801,11 +801,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">Validate output schema with expectedSchema <span class="argument">&quot;gcsTsvFileSchema&quot;</span></span>
 
-  <span class="lead-duration duration">5.234</span>
+  <span class="lead-duration duration">1.462</span>
 
 </div>
 
@@ -813,6 +813,23 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-19">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: Schema displayed on UI should match with the expected Schema
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at io.cdap.e2e.pages.actions.CdfPluginPropertiesActions.verifyOutputSchemaMatchesExpectedSchema(CdfPluginPropertiesActions.java:235)
+	at stepsdesign.PipelineSteps.validateOutputSchemaWithExpectedSchema(PipelineSteps.java:170)
+	at &#10045;.Validate output schema with expectedSchema &quot;gcsTsvFileSchema&quot;(file:src/e2e-test/features/gcs/source/GCSourceSchema.feature:12)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -824,7 +841,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-19">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-20">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -836,13 +853,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-19" class="inner-level collapse collapsable-details ">
+    <div id="after-20" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.takeScreenshot(Scenario)</span>
 
-  <span class="lead-duration duration">0.161</span>
+  <span class="lead-duration duration">0.158</span>
 
           </div>
 
@@ -853,15 +870,15 @@ $(document).ready(function() {
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-20" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-21" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-209636563.png" download target="_blank">
+      <a href="embeddings/embedding_-1555376352.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-20" class="collapse collapsable-details ">
+    <div id="embedding-21" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-209636563.png">
+        <img src="embeddings/embedding_-1555376352.png">
       </div>
     </div>
   </div>
@@ -879,7 +896,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-21">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-22">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -891,13 +908,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-21" class="inner-level collapse collapsable-details ">
+    <div id="after-22" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">TestSetupHooks.deleteSourceBucketWithFile()</span>
 
-  <span class="lead-duration duration">0.712</span>
+  <span class="lead-duration duration">0.605</span>
 
           </div>
 
@@ -907,13 +924,13 @@ $(document).ready(function() {
 
   <div class="outputs inner-level">
       <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-22">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-23">
           Output 1
           <i class="chevron fa fa-fw"></i>
         </div>
-        <div id="output-22" class="collapse collapsable-details " >
+        <div id="output-23" class="collapse collapsable-details " >
           
-          <pre><p>Deleted GCS Bucket cdf-e2e-test-1673bb03-3027-495a-8afb-5308fed9a98d</p></pre>
+          <pre><p>Deleted GCS Bucket cdf-e2e-test-5a0e797c-5378-4eb1-94a2-49294aa4b63d</p></pre>
         </div>
       </div>
   </div>
